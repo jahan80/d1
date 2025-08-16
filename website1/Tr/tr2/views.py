@@ -2,9 +2,9 @@ from django.shortcuts import render
 # Create your views here.
 from django.http import HttpResponse
 def home(request):
-    return  render(request, 'website/index.html')
+    return HttpResponse('<h1>Home page </h1>')
 def about(request):
-    return render(request, 'website/about.html')
+    return HttpResponse('<h1>About page </h1>')
 def contact(request):
-    return render(request, 'website/contact.html')
+    return HttpResponse('<h1>contact page </h1>')
 
